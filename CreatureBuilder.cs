@@ -23,9 +23,11 @@ switch (choice)
         break;
 }
 
+/////////////////////////////////////////////////
+
 void StartGame()
 {
-    DisplayTextAsIfTyping("Let's start off with the basics. What kind of creature would you like to create?");
+    DisplayTextAsIfTyping("Let's start off with the basics. What kind of creature would you like to create? Enter the number corresponding to the creature's type and press enter.");
     Console.WriteLine("1. Aberration\t2. Beast\t3. Celestial\t4. Construct\t5. Dragon\t6. Elemental\t7. Fey");
     Console.WriteLine("8. Fiend\t\t9. Giant\t10. Humanoid\t11. Monstrosity\t12. Ooze\t13. Plant\t\t14. Undead");
 
@@ -33,9 +35,11 @@ void StartGame()
     switch (userInput)
     {
         case 1:
+            Console.WriteLine("Hi");
+            break;
 
-
-        default: Console.WriteLine("Please enter a valid response.");
+        default: 
+            Console.WriteLine("Please enter a valid response.");
             break;
     }
 }
